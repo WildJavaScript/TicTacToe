@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <style>
+      body {
+        background-color: orange;
+      }
+      h1 {
+        text-align: center;
+        font-size: 75px;
+      }
+      .main-content {
+        display: flex;
+        justify-content: center;
+      }
+      th {
+        border: solid black;
+        height: 150px;
+        width: 150px;
+        font-size: 100px;
+        cursor: pointer;
+      }
+      th:hover {
+        background-color: darkorange;
+      }
+      #winner-text {
+        text-align: center;
+        color: forestgreen;
+        font-size: 75px;
+      }
+      #resetButton {
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+      }
+      button {
+        height: 50px;
+        width: 100px;
+        border-radius: 5px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: chocolate;
+        border: ridge springgreen;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Tic Tac Toe</h1>
+    <div id="resetButton"><button onClick="resetGame()">Reset</button></div>
+    <div class="main-content">
+      <table>
+        <tr>
+          <th id="box1" onClick="displayInput('box1')"></th>
+          <th id="box2" onClick="displayInput('box2')"></th>
+          <th id="box3" onClick="displayInput('box3')"></th>
+        </tr>
+        <tr>
+          <th id="box4" onClick="displayInput('box4')"></th>
+          <th id="box5" onClick="displayInput('box5')"></th>
+          <th id="box6" onClick="displayInput('box6')"></th>
+        </tr>
+        <tr>
+          <th id="box7" onClick="displayInput('box7')"></th>
+          <th id="box8" onClick="displayInput('box8')"></th>
+          <th id="box9" onClick="displayInput('box9')"></th>
+        </tr>
+      </table>
+    </div>
+    <h1 id="winner-text"></h1>
+    <script src="./TicTacToe.js"></script>
+  </body>
+</html>
